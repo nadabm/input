@@ -1,0 +1,41 @@
+.input{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+   max-width: 190px;
+    height: 30px;
+   border: 2px solid transparent;
+   outline: none;
+   border-bottom: 2px solid #3f3f3f;
+   caret-color:  #3f3f3f;
+   background-color: #212121;
+   padding: 5px;
+   transition: .5s linear;
+   font-family: monospace;
+  letter-spacing: 1px;
+  border-radius: 20px;
+
+}
+.input:focus {
+    border: 2px solid #fa4753;
+    caret-color: #fa4753;
+    color: #fa4753;
+    box-shadow: 4px 4px 10px #070707;
+  }
+  .input:focus::placeholder {
+    color: #fa4753;
+  }
+  
+  body{
+    animation: change 5s infinite linear;
+  }
+  @keyframes change {
+    
+
+    0%   {top: 0px; left: 0px; background: rgb(219, 155, 155);}
+    25%  {top: 0px; left: 100px; background: rgb(219, 83, 65);}
+    50%  {top: 100px; left: 100px; background: rgb(138, 44, 44);}
+    75%  {top: 100px; left: 0px; background: rgb(156, 42, 42);}
+    100% {top: 0px; left: 0px; background: rgb(233, 134, 134);}
+    
+  }
